@@ -13,11 +13,7 @@ pipeline {
     post {
         always {
             script {
-                allure {[
-                    includeProperties: false,
-                    jdk: 'jdk-8u291',
-                    results: [[path: 'allure-results']]
-                ]}
+                allure includeProperties: false, jdk: 'jdk-8u291', results: [[path: 'allure-results']]
             }
         }
     }
