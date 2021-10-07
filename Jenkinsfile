@@ -11,15 +11,13 @@ pipeline {
         }
     }
     post {
-        always {
-            script {
-                allure {[
-                    includeProperties: false,
-                    jdk: 'jdk-8u291',
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'allure-results']]
-                ]}
-            }
+        script {
+            allure {[
+                includeProperties: false,
+                jdk: 'jdk-8u291',
+                reportBuildPolicy: 'ALWAYS',
+                results: [[path: 'allure-results']]
+            ]}
         }
     }
 }
