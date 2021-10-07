@@ -10,14 +10,10 @@ pipeline {
             }
         }
     }
-    post {
+    post('Results') {
         always {
             script {
-                allure {
-                    includeProperties: false,
-                    jdk: 'jdk-8u291',
-                    results: [[path: 'allure-results']]
-                }
+                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
             }
         }
     }
