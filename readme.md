@@ -36,13 +36,13 @@ rpm -ivh /root/jenkins-2.303.1-1.1.noarch.rpm
 5. 开启端口访问防火墙设置
 https://www.jianshu.com/p/c379469d7134
 
-5. 插件下载地址如下：
-http://mirror.serverion.com/jenkins/plugins/
 ```
 
 ### 参考
 ```
+https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/
 https://docs.qameta.io/allure/#_testng
 https://www.cnblogs.com/sueyyyy/p/13721976.html
 https://blog.51cto.com/wujianwei/2492354
+https://blog.csdn.net/qq_39722422/article/details/108796646
 ```
